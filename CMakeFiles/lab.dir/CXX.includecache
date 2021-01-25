@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/csmajs/llocs001/cs100/labs/lab3/lab-03-composite-codingcats/base.hpp
+string
+-
+
+/home/csmajs/llocs001/cs100/labs/lab3/lab-03-composite-codingcats/main.cpp
+iostream
+-
+base.hpp
+/home/csmajs/llocs001/cs100/labs/lab3/lab-03-composite-codingcats/base.hpp
+op.hpp
+/home/csmajs/llocs001/cs100/labs/lab3/lab-03-composite-codingcats/op.hpp
+rand.hpp
+/home/csmajs/llocs001/cs100/labs/lab3/lab-03-composite-codingcats/rand.hpp
+add.hpp
+/home/csmajs/llocs001/cs100/labs/lab3/lab-03-composite-codingcats/add.hpp
+sub.hpp
+/home/csmajs/llocs001/cs100/labs/lab3/lab-03-composite-codingcats/sub.hpp
+mult.hpp
+/home/csmajs/llocs001/cs100/labs/lab3/lab-03-composite-codingcats/mult.hpp
+div.hpp
+/home/csmajs/llocs001/cs100/labs/lab3/lab-03-composite-codingcats/div.hpp
+pow.hpp
+/home/csmajs/llocs001/cs100/labs/lab3/lab-03-composite-codingcats/pow.hpp
+
+/home/csmajs/llocs001/cs100/labs/lab3/lab-03-composite-codingcats/op.hpp
+base.hpp
+/home/csmajs/llocs001/cs100/labs/lab3/lab-03-composite-codingcats/base.hpp
+string
+-
+
