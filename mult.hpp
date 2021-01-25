@@ -3,7 +3,6 @@
 
 #include "base.hpp"
 
-
 class Mult : public Base {
     public:
         Mult(Base* left, Base* right) : Base() {
