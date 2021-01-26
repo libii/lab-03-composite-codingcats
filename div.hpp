@@ -9,10 +9,11 @@
 class Div : public Base {
     public:
         Div(Base* left, Base* right) : Base() {
+            if(left == nullptr || right == nullptr) {throw std::invalid_argument("Null argument passed into Div class.");}
             lChild = left; rChild = right;
             if(fabs(rChild->evaluate()) < std::numeric_limits<double>::epsilon()){
-		throw std::invalid_argument("Divide by zero.");
-	    }
+		        throw std::invalid_argument("Divide by zero.");
+	        }
         }
 
         double evaluate() {
