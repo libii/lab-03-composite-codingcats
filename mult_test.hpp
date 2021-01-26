@@ -30,7 +30,7 @@ TEST(MultTest, Stringify1){
   Base *a = new Op(1.0);
   Base *b = new Op(1.0);
   Base *c = new Mult(a, b);
-  EXPECT_EQ("(1.0*1.0)", c->stringify());
+  EXPECT_EQ("(1.000000*1.000000)", c->stringify());
 }
 
 #endif
