@@ -10,7 +10,6 @@ class Div : public Base {
     public:
         Div(Base* left, Base* right) : Base() {
             lChild = left; rChild = right;
-            //check if right child is zero. use numerical analysis
             if(fabs(rChild->evaluate()) < std::numeric_limits<double>::epsilon()){
 		throw std::invalid_argument("Divide by zero.");
 	    }
