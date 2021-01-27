@@ -1,28 +1,13 @@
-#ifndef __RAND_HPP__
-#define __RAND_HPP__
+#ifndef __RAN_TEST_HPP__
+#define __RAN_TEST_HPP__
 
-#include "base.hpp"
-#include <stdlib.h>
+#include "gtest/gtest.h"
 
+#include "rand.hpp"
 
-class Rand : public Base {
-    private:
-        double myValue=0;
-        Base* leftChild=NULL;
-        Base* rightChild=NULL;
+TEST(RandTest, RandValueEqualsString) {
+    Rand* test = new Rand();
+    EXPECT_EQ(std::to_string(test->evaluate()), test->stringify());
+}
 
-    public:
-        Rand() : Base() { 
-            double myValue = rand() % 100;
-        }
-
-        virtual double evaluate() { return myValue; }
-        virtual std::string stringify() { return std::to_string(myValue); }
-        
-        double getValue(){
-            return myValue;
-        }
-
-};
-
-#endif //__RAND_HPP__
+#endif //__RAN_TEST_HPP__

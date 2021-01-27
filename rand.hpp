@@ -16,8 +16,8 @@ class Rand : public Base {
             double myValue = rand() % 100;
         }
 
-        virtual double evaluate() { return myValue; }
-        virtual std::string stringify() { return std::to_string(myValue); }
+        double evaluate() { return myValue; }
+        std::string stringify() { return std::to_string(myValue); }
         
         double getValue(){
             return myValue;

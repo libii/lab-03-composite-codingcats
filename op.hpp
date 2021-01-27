@@ -14,8 +14,9 @@ class Op : public Base {
         Op(double value) : Base() { 
             myValue = value;
         }
-        virtual double evaluate() { return myValue; }
-        virtual std::string stringify() { 
+
+        double evaluate() { return myValue; }
+        std::string stringify() { 
             return std::to_string(myValue); }
         
         double getValue(){
