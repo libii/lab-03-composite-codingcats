@@ -17,7 +17,7 @@ class Pow : public Base {
             rChild = right;
         }
         double evaluate() {
-            return 0.0;
+            return pow(lChild->evaluate(), rChild->evaluate());
         }
         std::string stringify() {
             return '(' + lChild->stringify() + "**" + rChild->stringify() + ')';
